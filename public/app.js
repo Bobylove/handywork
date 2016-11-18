@@ -17,6 +17,8 @@
 			var me = this;
 			$("#question").addClass('animated fadeOut');
 			window.setTimeout(next,500);
+			$(this).addClass('bordergreen');
+			console.log(this);
 
 			function next(){
 				$("#question").removeClass('animated fadeOut');
@@ -56,6 +58,9 @@
 		' alt="liste des financements possibles" /> '
 		
 	};
+
+
+
 
 app.init();
 })();
